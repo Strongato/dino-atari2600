@@ -44,7 +44,7 @@ VSYNC_OFF                = 0
 
 ; Velocities are 16-bit fixed-point: high byte = whole, low byte = fraction
 ; Fraction overflows carry into whole, enabling sub-integer values per frame
-GRAVITY                  = $FFA0 ; whole=$FF (-1), fraction=$A0 (0.625) = -0.625/frame average
+GRAVITY                  = $FFA0 ; whole=$FF (-1), fraction=$A0 (0.625) = -0.375/frame
 STOMP_VELOCITY           = $FF80 ; whole=$FF (-1), fraction=$80 (0.5)   = -0.5/frame boost down
 JUMP_VELOCITY            = $03FF ; whole=$03 (+3), fraction=$FF (0.996) = +3.996/frame launch up
 
